@@ -9,12 +9,16 @@ app.get('/article-one requested', function (req, res) {
   res.sendFile('Article one requested and will be served here');
 });
 
-app.app.get('/article-two requested', function (req, res) {
+app.get('/article-two requested', function (req, res) {
   res.sendFile('Article two requested and will be served here');
 });
 
-app.app.get('/article-three requested', function (req, res) {
+app.get('/article-three requested', function (req, res) {
   res.sendFile('Article three requested and will be served here');
+});
+
+app.get('/uistyle.css', function (req,res){
+    res.sendFile(path.(__dirname,'ui''style.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
@@ -22,10 +26,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
-// Do not change port, otherwise your app won't run on IMAD servers
-// Use 8080 only for local development if you already have apache running on 80
-
-var port = 80;
-app.listen(port, function () {
+var port = 8080;
+app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
