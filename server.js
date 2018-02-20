@@ -5,19 +5,19 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/article one requested', function (req, res) {
+app.get('/article-one requested', function (req, res) {
   res.sendFile('Article one requested and will be served here');
 });
 
-app.app.get('/article two requested', function (req, res) {
+app.app.get('/article-two requested', function (req, res) {
   res.sendFile('Article two requested and will be served here');
 });
 
-app.app.get('/article three requested', function (req, res) {
+app.app.get('/article-three requested', function (req, res) {
   res.sendFile('Article three requested and will be served here');
 });
 
-get('/ui/madi.png', function (req, res) {
+app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
