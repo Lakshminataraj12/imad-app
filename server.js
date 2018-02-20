@@ -10,11 +10,11 @@ app.get('/article one requested', function (req, res) {
 });
 
 app.app.get('/article two requested', function (req, res) {
-  res.sendFile('Article two is requested and will be servsed herer ');
+  res.sendFile('Article two is requested and will be servsed here');
 });
 
 app.app.get('/article three requested', function (req, res) {
-  res.sendFile('Article three is requested and will be servsed herer ');
+  res.sendFile('Article three is requested and will be servsed here');
 });
 
 get('/ui/madi.png', function (req, res) {
