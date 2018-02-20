@@ -6,15 +6,15 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/article one requested', function (req, res) {
-  res.sendFile('/aticle one is requested and will be servsed here');
+  res.sendFile('Article one is requested and will be servsed here');
 });
 
 app.app.get('/article two requested', function (req, res) {
-  res.sendFile('/aticle two is requested and will be servsed herer ');
+  res.sendFile('Article two is requested and will be servsed herer ');
 });
 
 app.app.get('/article three requested', function (req, res) {
-  res.sendFile('/aticle three is requested and will be servsed herer ');
+  res.sendFile('Article three is requested and will be servsed herer ');
 });
 
 get('/ui/madi.png', function (req, res) {
