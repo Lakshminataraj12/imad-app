@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/article one requested', function (req, res) {
-  res.sendFile('/aticle one requestedand will be servsed herer ');
+  res.sendFile('/aticle one requestedand will be servsed here');
 });
 
 app.app.get('/article one requested', function (req, res) {
