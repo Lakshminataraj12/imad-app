@@ -9,8 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('application one requested', function (req, res) {
+  res.sendFile('application one requested and served here');
 });
 
 app.get('/ui/madi.png', function (req, res) {
