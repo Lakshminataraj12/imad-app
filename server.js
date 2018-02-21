@@ -22,7 +22,7 @@ app.get('/article-three requested', function (req, res) {
   res.sendFile('Article three requested and will be served here');
 });
 
-app.get('/uistyle.css', function (req,res){
+app.get('/uistyle.css', function (req, res){
     res.sendFile(path.join(__dirname,'ui','style.css'));
 });
 
