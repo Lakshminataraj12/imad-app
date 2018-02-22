@@ -20,6 +20,11 @@ app.get('/artcile-two', function (req, res) {
 app.get('/artcile-three', function (req, res) {
      res.sendFile('Article three requested and will be served here');
 });
+
+app.get('/ui/style.css', function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'ui.css'));
+});
+
 app.get('/ui/madi.png', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
