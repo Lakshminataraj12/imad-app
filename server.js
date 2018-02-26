@@ -13,13 +13,13 @@ var articleTwo= {
     content: '
               <p>
           This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-                </p>
+                
                 <p>
                      This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-                </p> 
+                 
                 <p>
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-               </p> '
+               '
                     };
             
             fuction createTemplate (data) {
