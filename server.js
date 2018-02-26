@@ -52,7 +52,8 @@ var articleTwo= {
                     </div>
     </body>
      </html>'                  
-            }
+       ;
+       }
             
  return htmlTemplate;
                
