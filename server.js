@@ -10,17 +10,17 @@ var articleTwo= {
     title: 'Article Two | Lakshmi Natraj',
     heading: 'Article Two',
     date: 'Feb 26, 2019', 
-    content: '
+    content: `
               <p>
           This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-                
+                </p>
                 <p>
                      This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
                  
                 <p>
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-               '
-                    };
+              </p> '
+                };
             
             fuction createTemplate (data) {
                 var title = data.title;
@@ -37,6 +37,7 @@ var articleTwo= {
         </title>
     </head>
     <body>
+    <div class="container">
         <div>
             <a href="/">Home</a>
         </div>
@@ -80,6 +81,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res){
      res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
 
 var port = 80;
 app.listen(port, function () {
