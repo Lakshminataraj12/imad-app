@@ -9,7 +9,7 @@ app.use(morgan('combined'));
 var articleTwo= {
     title: 'Article Two | Lakshmi Natraj',
     heading: 'Article Two',
-    date: 'Feb 26, 2019', 
+    date: 'Feb 26, 2018', 
     content: `
               <p>
           This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
@@ -33,7 +33,6 @@ var articleTwo= {
     <head>
         <title>
         ${title}
-            Article Two | Lakshmi Natraj
         </title>
     </head>
     <body>
