@@ -54,7 +54,7 @@ var articleTwo= {
                     </div>
                     </div>
     </body>
-     </html>'                  
+     </html> '                  
        ;
         return htmlTemplate;
             }
