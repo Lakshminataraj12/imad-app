@@ -32,11 +32,11 @@ var articleTwo= {
  <html>
     <head>
         <title> 
+       ${title}
+         </title>
         <meta name="viewport" content="width-device-width, initialscale=1" />
            <link href="/ui/style.css" rel="stylesheet.css" />
-        ${title}
-        </title>
-    </head>
+         </head>
     <body>
     <div class="container">
         <div>
