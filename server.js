@@ -55,7 +55,7 @@ var htmlTemplate  ='
                 </div>
                 </div>
 </body>
- </html> '                  
+ </html>'                  
    ;
     return htmlTemplate;
 }
@@ -65,11 +65,12 @@ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function (req, res) {
-res.send(createTemplate(articleone));
+ res.sendFile(path.join(__dirname, 'ui', 'article-one.html)):
 });
 
-app.get('/article-two', function (req, res) { 
- res.sendFile(path.join(__dirname, 'ui', 'article-two.ml'));
+
+pp.get('/article-two', function (req, res) { 
+ res.sendFile(path.join(__dirname, 'ui', 'article-two.html));
 });
 
 app.get('/article-three', function (req, res) {
