@@ -19,7 +19,7 @@ var articleTwo= {
                  </p>
                 <p>
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-              </p> '
+              </p>'
                 };
             
         fuction createTemplate (data) {
