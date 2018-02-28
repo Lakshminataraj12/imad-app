@@ -16,7 +16,7 @@ var articleTwo= {
                 </p>
                 <p>
                      This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-                 
+                 </p>
                 <p>
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
               </p> '
@@ -28,7 +28,7 @@ var articleTwo= {
                 var heading =data.heading;
                 var content =data.content;
                 
- var htmlTemplate  = 
+ var htmlTemplate  = '
  <html>
     <head>
         <title> 
