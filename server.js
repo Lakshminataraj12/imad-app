@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articleTwo= {
-    title: Article Two | Lakshmi Natraj,
+    title:' Article Two | Lakshmi Natraj',
     heading: 'Article Two',
     date: 'Feb 28, 2018', 
     content: `
