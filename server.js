@@ -10,7 +10,17 @@ var articleTwo= {
     title: 'Article Two | Lakshmi natraj',
     heading: 'Article One',
     date: 'Feb 28, 2018', 
-    content: `
+    content: ` <p>
+                This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
+                </p>
+                <p>
+                This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
+               </p>
+                <p>
+                This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
+            </p>'
+            }
+    
      
 
 app.get('/', function (req, res) {
