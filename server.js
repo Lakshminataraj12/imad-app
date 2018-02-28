@@ -38,28 +38,28 @@ var articleTwo= {
  </head>
  <body>
  <div class="container">
- <div>       <div>
+ <div>       
             <a href="/">Home</a>
         </div>
         <hr/>
         <h3>
-            Article Two
+            ${heading}
         </h3>
         <div>
-            feb 21, 2018
+            ${date}
             </div>
  <div>
     <p>
-          This is the content for my second article.
-          </p>
+          ${content}
           </div>
           </div>
           </body>
-          </html>
+          </html>'
+          ;
+          return htmlTemplate;
+ }
  
- 
-
-app.get('/', function (req, res) {
+ app.get('/', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
@@ -69,7 +69,7 @@ app.get('/article-one', function (req, res) {
 
 
 pp.get('/article-two', function (req, res) { 
- res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+ res.send(
 });
 
 app.get('/article-three', function (req, res) {
