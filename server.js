@@ -22,10 +22,10 @@ var articleTwo= {
               </p>'
                 };
             
-fuction createTemplate (data) {
-            var title = data.title;
-            var date = data.date;
-            var heading =data.heading;
+function createtemplate (data) {
+var title = data.title;
+var date = data.date;
+var heading =data.heading;
             var content =data.content;
             
 var htmlTemplate  = '
@@ -86,5 +86,5 @@ app.get('/ui/madi.png', function (req, res){
 
 var port = 80;
 app.listen(port, function () {
-console.log(`IMAD course app listening on port ${port}!`);
+console.log(`IMAD course app listening on port ${port}!`));
 });
