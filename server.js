@@ -11,7 +11,7 @@ var articleTwo= {
     heading: 'Article Two',
     date: 'Feb 26, 2018', 
     content: `
-              <p>
+     <p>
           This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
                 </p>
                 <p>
@@ -68,7 +68,7 @@ res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-two', function (req, res) { 
-res.send(createTemplate(articletwo);   
+res.send(createTemplate(articletwo));   
 });
 
 app.get('/article-three', function (req, res) {
