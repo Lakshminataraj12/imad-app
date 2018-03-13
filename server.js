@@ -22,6 +22,19 @@
               </p> `
                 };
             
+              'article-three': {
+                                    title: 'Article Three | Lakshmi natraj',
+                                    heading: 'Article Three',
+                                    date: 'Mar 13, 2018', 
+                                    content: `
+                                                  <p>
+                                                    This is the content for my third article.  This is the content for my third article. 
+                                                    </p>`
+                                    ;
+                                        }
+       
+
+            
             function createTemplate (data) {
                 var title = data.title;
                 var date = data.date;
@@ -63,18 +76,33 @@
    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
     });
 
-        
- app.get('/', function (req, res) {
-   res.sendFile(path.join(__dirname, 'article-two.html'));
-});
+          var counter = 0;
+                    app.get('/counter', function (req, res) {
+                        counter = counter + 1;
+                        res.send(counter.toString());
+                    }};
+                    
+                    app.get('/:articleName', function (req, res) {
+                        //articlename--article-two
+                        //articles[articlename] -- {}content object for article two
+                var articleName = req.param.articleName;
+                res.send(createTemplate(articles[articlename]));
+                    }};
+                     
+                        app.get('/ui/style.css', function (req, res) {
+                    res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+                    });
+                    
+                    app.get('/ui/main.js', function (req, res) {
+                    res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+                    });
+                    
+                    app.get('/ui/madi.png', function (req, res){
+                     res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+                });
+                
+                
 
- app.get('/', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-    });
-
- app.get('/', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-    });
 
                                   
                 var port = 80;
