@@ -5,7 +5,7 @@ var counter = 0;
 buttononclick = function () {
     
     // make  request to the counter endpoint
-    
+    var request = new XMLHttpRequest();
     // capture the response and store it in a variable
     
     // Render the variable in the correct span
