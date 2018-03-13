@@ -22,7 +22,6 @@
               </p> `
                 };
             
-              'article-three': {
                                     title: 'Article Three | Lakshmi natraj',
                                     heading: 'Article Three',
                                     date: 'Mar 13, 2018', 
@@ -33,9 +32,7 @@
                                     ;
                                         }
        
-
-            
-            function createTemplate (data) {
+        function createTemplate (data) {
                 var title = data.title;
                 var date = data.date;
                 var heading =data.heading;
