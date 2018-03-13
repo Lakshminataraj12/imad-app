@@ -7,15 +7,8 @@
       
       
                 
-              'article-two': {
-        title: 'Article Two | Lakshmi natraj',
-        heading: 'Article Two',
-        date: 'Feb 28, 2018', 
-        content: `
-                  This is the content for my second article.  This is the content for my second article. 
-                                                    </p>`
-                                        },
-                                        'article-three': {
+         
+                                     'article-three': {
                                     title: 'Article Three | Lakshmi natraj',
                                     heading: 'Article Three',
                                     date: 'Mar 13, 2018', 
