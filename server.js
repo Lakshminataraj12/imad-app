@@ -6,21 +6,19 @@
         app.use(morgan('combined'));
         
         
-                    'article-two' : {
+                    'article-two': {
                         title: 'Article Two | Lakshmi natraj',
                         heading: 'Article Two',
                         date: 'Feb 28, 2018', 
                     content: `    
                     <p>
-                                    This is the content for my le.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
-                                    </p>
-                                    <p>
                                     This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
                                    </p>
                                     <p>
                                     This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
                                 </p>`
                                 },
+                                
                                 'article-three': {
                             title: 'Article Three | Lakshmi natraj',
                             heading: 'Article Three',
