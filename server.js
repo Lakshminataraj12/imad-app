@@ -22,7 +22,7 @@
               </p> `
                 };
             
-            fuction createTemplate (data) {
+            function createTemplate (data) {
                 var title = data.title;
                 var date = data.date;
                 var heading =data.heading;
@@ -60,12 +60,12 @@
             }
    
    app.get('/', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'index.html'))
+   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
     });
 
         
  app.get('/', function (req, res) {
-   res.sendFile(path.join(__dirname, 'article-two.html'))
+   res.sendFile(path.join(__dirname, 'article-two.html'));
 });
 
  app.get('/', function (req, res) {
@@ -76,8 +76,7 @@
    res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
     });
 
-                                   
-                
+                                  
                 var port = 80;
                 app.listen(port, function () {
                     console.log(`IMAD course app listening on port ${port}!`);
