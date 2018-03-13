@@ -59,8 +59,23 @@
         return htmlTemplate;
             }
    
+   app.get('/', function (req, res) {
+   res.sendFile(path.join(__dirname, 'ui', 'index.html'))
+    });
+
         
-         
+ app.get('/', function (req, res) {
+   res.sendFile(path.join(__dirname, 'article-two.html'))
+});
+
+ app.get('/', function (req, res) {
+   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+    });
+
+ app.get('/', function (req, res) {
+   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+    });
+
                                    
                 
                 var port = 80;
