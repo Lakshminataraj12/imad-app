@@ -6,7 +6,7 @@
                 app.use(morgan('combined')); 
       
       
-        var articleTwo= {
+         article-two: {
     title: 'Article Two | Lakshmi Natraj',
     heading: 'Article Two',
     date: 'Feb 26, 2018', 
@@ -20,8 +20,8 @@
                 <p>
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
               </p> `
-                };
-            
+                },
+            article-three: {
                                     title: 'Article Three | Lakshmi natraj',
                                     heading: 'Article Three',
                                     date: 'Mar 13, 2018', 
