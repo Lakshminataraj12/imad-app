@@ -21,15 +21,15 @@
                                 This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
                             </p>`
                             },
-                            'article-three': {
+                            `article-three': {
                         title: 'Article Three | Lakshmi natraj',
                         heading: 'Article three',
                         date: 'Feb 28, 2018', 
-                        content:`
+                        content:'
                                       <p>
                                         This is the content for my third article.  This is the content for my third article. 
-                                        </p>`
-                            }
+                                        </p>'
+                            
                             };
                      
                      
@@ -99,3 +99,9 @@
         app.get('/ui/madi.png', function (req, res){
          res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
     }};
+    
+    var port = 80;
+    app.listen(port, function () {
+        console.log(`IMAD course app listening on port ${port}!`);
+    });
+    }
