@@ -21,21 +21,22 @@ var articleTwo= {
                 This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
             </p>'
             };
+            
+            
             var articlethree= {
     title: 'Article Three | Lakshmi natraj',
     heading: 'Article three',
     date: 'Feb 28, 2018', 
     content: `
-              <p>
-                This is the content for my article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
-                </p>
-                <p>
-                This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
-               </p>
-                <p>
-                This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
-            </p>'
-            };
+                  <p>
+                    This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
+                    </p>
+                    <p>
+                    This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
+                    </p>  <p>
+                    This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
+                    </p>`
+                     };
  
  function createTemplate (data) {
      var title = data.title;
