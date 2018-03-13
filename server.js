@@ -8,7 +8,7 @@
     
                 var articleTwo= {
                     title: 'Article Two | Lakshmi natraj',
-                    heading: 'Article One',
+                    heading: 'Article Two',
                     date: 'Feb 28, 2018', 
                 content: `    
                 <p>
@@ -23,7 +23,7 @@
                             },
                             `article-three': {
                         title: 'Article Three | Lakshmi natraj',
-                        heading: 'Article three',
+                        heading: 'Article Three',
                         date: 'Feb 28, 2018', 
                         content: '
                                       <p>
