@@ -7,7 +7,7 @@
       
       
                 
-              'article-two';:{
+              'article-two': {
         title: 'Article Two | Lakshmi natraj',
         heading: 'Article Two',
         date: 'Feb 28, 2018', 
