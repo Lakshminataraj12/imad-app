@@ -7,7 +7,7 @@
       
      
      
-      article-two;: {
+  var articletwo= {  
     title: 'Article Two | Lakshmi Natraj',
     heading: 'Article Two',
     date: 'Feb 26, 2018', 
@@ -22,7 +22,7 @@
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
               </p>`
                 },
-            article-three: {
+       articlethree= {    
                                     title: 'Article Three | Lakshmi Natraj',
                                     heading: 'Article Three',
                                     date: 'Mar 13, 2018', 
@@ -30,8 +30,8 @@
                                                   <p>
                                                     This is the content for my third article .  This is the content for my third article . 
                                                     </p>`
-                                    ;
-                                        }
+                                    
+                                        };
        
         function createTemplate (data) {
                 var title = data.title;
@@ -78,14 +78,14 @@
                     app.get('/counter', function (req, res) {
                         counter = counter + 1;
                         res.send(counter.toString());
-                    }};
+                    });
                     
                     app.get('/:articleName', function (req, res) {
                         //articlename--article-two
                         //articles[articlename] -- {}content object for article two
                 var articleName = req.param.articleName;
                 res.send(createTemplate(articles[articlename]));
-                    }};
+                    });
                      
                         app.get('/ui/style.css', function (req, res) {
                     res.sendFile(path.join(__dirname, 'ui', 'style.css'));
