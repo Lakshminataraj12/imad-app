@@ -19,7 +19,7 @@
                  
                 <p>
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
-              </p> '
+              </p> `
                 };
             
             fuction createTemplate (data) {
@@ -27,8 +27,8 @@
                 var date = data.date;
                 var heading =data.heading;
                 var content =data.content;
-                
- var htmlTemplate  = '
+            
+ var htmlTemplate =`
  <html>
     <head>
         <title> 
@@ -54,8 +54,8 @@
                     </div>
                     </div>
     </body>
-     </html> '                  
-       ;
+     </html>                   
+       `;
         return htmlTemplate;
             }
    
