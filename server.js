@@ -6,62 +6,63 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleTwo= {
-    title: 'Article Two | Lakshmi natraj',
-    heading: 'Article One',
-    date: 'Feb 28, 2018', 
-content:'    <p>
-                This is the content for my le.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
-                </p>
-                <p>
-                This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
-               </p>
-                <p>
-                This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
-            </p>'
-            };
-            
-            
-                var articlethree= {
-        title: 'Article Three | Lakshmi natraj',
-        heading: 'Article three',
-        date: 'Feb 28, 2018', 
-        content:'
-                      <p>
-                        This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
-                        </p>
-                        <p>
-                        This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
-                        </p>  <p>
-                        This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
-                        </p>'
-                         };
-     
-     
-     function createTemplate (data) {
-         var title = data.title;
-         var data = data.date;
-        var heaading = data.heading;
-        var content = data.content;
-        
-     var htmlTemplate = '
-     <html>
-     <head>
-     <title>
-     ${title}
-     </title>
-     <meta name="viewport" content="width=device-width, initialscale=1" />
-        <link href="/ui/style.css" rel="stylesheet"/> 
-     </head>
-     <body>
-     <div class="container">
-     <div>       
-                <a href="/">Home</a>
-            </div>
-            <hr/>
-            <h3>
-                ${heading}
-            </h3>
+            var articleTwo= {
+                title: 'Article Two | Lakshmi natraj',
+                heading: 'Article One',
+                date: 'Feb 28, 2018', 
+            content: `    
+            <p>
+                            This is the content for my le.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
+                            </p>
+                            <p>
+                            This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
+                           </p>
+                            <p>
+                            This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article.  This is the content for my first article. 
+                        </p>`
+                        };
+                        
+                        
+                            var articlethree= {
+                    title: 'Article Three | Lakshmi natraj',
+                    heading: 'Article three',
+                    date: 'Feb 28, 2018', 
+                    content:`
+                                  <p>
+                                    This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
+                                    </p>
+                                    <p>
+                                    This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
+                                    </p>  <p>
+                                    This is the content for my third article.  This is the content for my third article.  This is the content for my third article.  
+                                    </p>`
+                                     };
+                 
+                 
+                 function createTemplate (data) {
+                     var title = data.title;
+                     var data = data.date;
+                    var heaading = data.heading;
+                    var content = data.content;
+                    
+                 var htmlTemplate =  '
+                 <html>
+                 <head>
+                 <title>
+                 ${title}
+                 </title>
+                 <meta name="viewport" content="width=device-width, initialscale=1" />
+                    <link href="/ui/style.css" rel="stylesheet"/> 
+                 </head>
+                 <body>
+                 <div class="container">
+                 <div>       
+                            <a href="/">Home</a>
+                        </div>
+                        <hr/>
+                        <h3>
+                            ${heading}
+                        </h3>
             <div>
                 ${date}
                 </div>
@@ -71,7 +72,7 @@ content:'    <p>
               </div>
               </body>
               </html>
-              ';
+             ' ;
               return htmlTemplate;
      }
      
@@ -83,7 +84,7 @@ content:'    <p>
     app.get('/counter',function (req, res) {
         counter = counter + 1;
         res.send(counter.tostring());
-    }}:
+    }};
     
     app.get('/:articleName', function (req, res) {
         //articlename--article-two
