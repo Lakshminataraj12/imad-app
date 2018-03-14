@@ -84,7 +84,7 @@
                     // Get the name from the request
                     var name = req.query.name;
                     
-                    naames.push(name);
+                    names.push(name);
                     // JSON: Javascript object notation
                     res.send(JSON.stringify(names));
                     });
