@@ -9,7 +9,6 @@
                 host: 'db.imad.hasura-app.io',
                 port: '5432',
                 password: process.env.DB_PASSWORD
-                
                  };   
             
             
@@ -33,7 +32,7 @@
                          This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article.
               </p>`
                 },
-       articlethree= {    
+       articlethree = {    
                                     title: 'Article Three | Lakshmi Natraj',
                                     heading: 'Article Three',
                                     date: 'Mar 13, 2018', 
