@@ -8,6 +8,8 @@
                 database: 'lakshmiobh333',
                 host: 'db_imad.hasura-app.io',
             } ;   
+            
+            
                 var app = express();
                 app.use(morgan('combined')); 
       
@@ -82,7 +84,7 @@
     
     var pool = new Pool(config);
     app.get('/test-db', function (req, res) {
-        // make a select from response
+        // make a select request
         // return a response with the results
         pool.query('SELECT * FROM test', function (err, result) {
             if (err) {
@@ -92,15 +94,7 @@
             }
             });
             });
-        })
-    
-
-    app.get('/test-db', function (req, res) {
-        // make a select request
-        // return a response with the results
-    });
         
-    }
 
           var counter = 0;
                     app.get('/counter', function (req, res) {
