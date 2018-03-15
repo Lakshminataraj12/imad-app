@@ -93,7 +93,7 @@
             });
             });
         })
-    })
+    )
     
     app.get('/test-db', function (req, res) {
         // make a select request
