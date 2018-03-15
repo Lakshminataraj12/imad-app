@@ -118,7 +118,7 @@
                     });
                     
                     
-                    app.get('/:articleName', function (req, res) {
+                    app.get('/artcles/:articleName', function (req, res) {
                         //articlename--article-two
                         //articles[articlename] -- {}content object for article two
                 var articleName = req.param.articleName;
