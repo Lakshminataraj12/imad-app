@@ -22,7 +22,7 @@ if (request.readyState == XMLHttpRequest.DONE) {
     // Make the request
     request.open('GET', 'http://lakshmiobh33.imad.hasura-app.io/counter',true);
     request.send(null)
-    
+    };
 
 // Submit name
 var nameInput = document.getElementById('name');
