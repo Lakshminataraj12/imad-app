@@ -15,9 +15,7 @@
                 var app = express();
                 app.use(morgan('combined')); 
       
-     
-     
-  var articles = {  
+     var articles = {  
     title: 'Article Two | Lakshmi Natraj',
     heading: 'Article Two',
     date: 'Feb 26, 2018', 
@@ -113,8 +111,7 @@
                     res.send(JSON.stringify(names));
                     });
                     
-                    
-                    app.get('/artcles/:articleName', function (req, res) {
+                     app.get('/artcles/:articleName', function (req, res) {
                         //articlename--article-two
                         //articles[articlename] -- {}content object for article two
                 var articleName = req.param.articleName;
