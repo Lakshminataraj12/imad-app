@@ -93,7 +93,7 @@
                 res.send(JSON.stringify(result));
             }
             });
-            });
+            
         
 
           var counter = 0;
