@@ -7,7 +7,7 @@
                 user: 'lakshmiobh333',
                 database: 'lakshmiobh333',
                 host: 'db_imad.hasura-app.io',
-            }    
+            } ;   
                 var app = express();
                 app.use(morgan('combined')); 
       
@@ -92,7 +92,6 @@
             }
             });
             });
-            
         })
     })
     
