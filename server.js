@@ -106,8 +106,8 @@
       pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbstring], funtion (err, result) {
             if (err) {
                 res.staus(500).send(err.toString());
-            } else {
-                res.send(JSON.stringify(result));
+            }else {
+                res.send('user successfully created:' + username);
             }
   });
   });
