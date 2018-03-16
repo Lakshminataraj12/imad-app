@@ -15,7 +15,7 @@
             
             var app = express();
                 app.use(morgan('combined')); 
-                app.use(body-parser.json());
+                app.use(body-Parser.json());
       
      var articles = {  
     title: 'Article Two | Lakshmi Natraj',
