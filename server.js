@@ -92,8 +92,8 @@
         
         
   app.get('/hash/:input', function(req, res) {
-      var hashedString = hash(req.params.input, 'this-is-the-same-render-string') ;
-  res.send(hashedstring);
+      var hashedString = hash(req.params.input, "this-is-the-same-render-string") ;
+  res.send(hashedString);
   });
   
   
