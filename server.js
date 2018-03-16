@@ -3,6 +3,7 @@
                 var path = require('path');
                 var Pool = require('pg').Pool;
                  var crypto =require('crypto');
+                 var parser =require('body-parser');
                  
             var config = {
                 user: 'lakshmiobh333',
@@ -12,9 +13,9 @@
                 password: process.env.DB_PASSWORD
                  };   
             
-            
-                var app = express();
+            var app = express();
                 app.use(morgan('combined')); 
+                app.use(body-parser.jso());
       
      var articles = {  
     title: 'Article Two | Lakshmi Natraj',
@@ -95,7 +96,26 @@
       var hashedString = hash(req.params.input, "this-is-the-same-render-string") ;
   res.send(hashedString);
   });
+  ('/create-user', function (req, res) {
+      // username, password
+      // JSON
+      var username = req.body.username;
+      var password =req.bodt.password;
+      var salt = req.Crypto.getrandombytes(128).toString('hex');
+      var dbstring = hash(password, salt);
+      pool.query("INSERT INTO 'user' (username, password) VALUES ($1, $2)", [username, dbstring], funtion (err, result) {
+            if (err) {
+                res.staus(500).send(err.toString());
+            } else {
+                res.send(JSON.stringify(result));
+            }
+            });
+         });
+      
+      
+  }
   
+  app.post
   
     var pool = new Pool(config);
     app.get('/test-db', function (req, res) {
