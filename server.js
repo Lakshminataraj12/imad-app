@@ -103,13 +103,13 @@
       var password =req.bodt.password;
       var salt = req.Crypto.getrandombytes(128).toString('hex');
       var dbstring = hash(password, salt);
-      pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbstring], funtion (err, result) {
+      pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbstring], funtion (err, result)); {
             if (err) {
                 res.staus(500).send(err.toString());
             }else {
                 res.send('user successfully created:' + username);
             }
-  });
+      }
   });
   
     var pool = new Pool(config);
