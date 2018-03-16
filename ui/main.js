@@ -1,5 +1,5 @@
-// Submit username/password to login
 
+// Submit username/password to login
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     
@@ -29,7 +29,5 @@ console.log(username);
  request.open('POST', 'http://lakshmiobh333.imad.hasura-app.io/login', true);
  request.setRequest.Header('Content-Type','application/json');
     request.send(Json.Stringify({username: username, password: password}));
-    
-
-
-}
+  
+    };
