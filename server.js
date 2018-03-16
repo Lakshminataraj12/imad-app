@@ -85,7 +85,7 @@
     
     function hash (input, salt) {
         // How do we create a hash?
-        var hash = crypto.pbkdfSync(input, salt, 10000, 512, 'shaS12');
+        var hash = crypto.pbkdf2Sync(input, salt, 10000, 512, 'shaS12');
         return hashed.tostring('hex');
         }
         
