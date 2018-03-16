@@ -83,11 +83,13 @@
    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
     });
     
+    
     function hash (input, salt) {
         // How do we create a hash?
-        var hash = crypto.pbkdf2Sync(input, salt, 10000, 512, 'shaS12');
+        var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'shaS12');
         return hashed.tostring('hex');
         }
+        
         
   app.get('/hash/:input', function(req, res) {
       var hashedString = hash(req.params.input, 'this-is-the-same-render-string') ;
