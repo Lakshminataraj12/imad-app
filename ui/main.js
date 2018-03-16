@@ -28,7 +28,7 @@ console.login(username);
   console.login(username);   
  request.open('POST', 'http://lakshmiobh333.imad.hasura-app.io/login', true);
  request.Setrequest.Header('Content-Type','application/json');
-    request.send(Json.Stringigy({username: username, password: password}));
+    request.send(Json.Stringify({username: username, password: password}));
     
 
 
