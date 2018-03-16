@@ -1,8 +1,7 @@
 // Submit username/password to login
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
-submit.onclick  function () {
+submit.onclick = function () {
     
     //create a request object
     var request = new XMLHttpRequest();
@@ -12,25 +11,25 @@ request.onreadystatechange = function () {
 if (request.readyState == XMLHttpRequest.DONE) {
     // Take some action
     if (request.status ==200) {
-        // Capture a list of names and render it as a list
-        var names = request.responseText;
-        names = JSON.parse(names);
-        var list ='';
-        for (var i=0; i< names.length; i++) {
-            list =='<li>' , names[i],'<li/>';
-        }
-        var ul =document.getElementById('namelist');
-        ul.innerHTML = list;
+        alert('logged in successfully');
+    }else if(request.status == 403) {
+        alert('username/password is incorrect');
+    }else if(request.status == 500) { 
+        alert('Something went wrong on the server');
     }
         }
 // Not done yet
 };
 
 // Make the request
-     request.open('GET', 'http://lakshmiobh333.imad.hasura-app.io\submit-name?name', + name, true)
-    request.send(null);
-    span.innerHTML = counter.toString();
-}
-}
+var username = document.getElementId('username').value;
+var password = document.getElementId('password').value;
+console.login(username);
+  console.login(username);   
+ request.open('POST', 'http://lakshmiobh333.imad.hasura-app.io/login', true);
+ request.Setrequest.Header('Content-Type','application/json');
+    request.send(Json.Stringigy({username: username, password: password}));
+    
+
 
 }
