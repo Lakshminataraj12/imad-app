@@ -24,8 +24,8 @@ if (request.readyState == XMLHttpRequest.DONE) {
 // Make the request
 var username = document.getElementById('username').value;
 var password = document.getElementById('password').value;
-console.login(username);
-  console.login(username);   
+console.log(username);
+  console.log(username);   
  request.open('POST', 'http://lakshmiobh333.imad.hasura-app.io/login', true);
  request.Setrequest.Header('Content-Type','application/json');
     request.send(Json.Stringify({username: username, password: password}));
