@@ -101,7 +101,7 @@
       // username, password
       // JSON
       var username = req.body.username;
-      var password =req.bodt.password;
+      var password =req.body.password;
       var salt = req.Crypto.getrandombytes(128).toString('hex');
       var dbstring = hash(password, salt);
       pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbstring], funtion (err, result)); {
