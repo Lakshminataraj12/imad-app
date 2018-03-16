@@ -22,8 +22,8 @@ if (request.readyState == XMLHttpRequest.DONE) {
 };
 
 // Make the request
-var username = document.getElementId('username').value;
-var password = document.getElementId('password').value;
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
 console.login(username);
   console.login(username);   
  request.open('POST', 'http://lakshmiobh333.imad.hasura-app.io/login', true);
