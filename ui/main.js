@@ -27,6 +27,6 @@ var password = document.getElementById('password').value;
 console.log(username);
   console.log(username);   
  request.open('POST', 'http://lakshmiobh333.imad.hasura-app.io/login', true);
-  request.setRequest.Header('Content-Type','application/json');
+  request.setRequest.Header('Content-Type', 'application/json');
  request.send(Json.Stringify({username: username, password: password}));
    };
